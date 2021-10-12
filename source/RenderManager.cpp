@@ -27,7 +27,7 @@ void RenderManager::FlameUpdate()
                 [(int)clamp(x / widthMul, 0.f, (float)pixWidthCount)]
                 [(int)clamp(y / heightMul, 0.f, (float)pixHeightCount)];
 
-            frameBuffer[x + y * SCREEN_WIDTH] = RGB15((int)(color.x * 30), (int)(color.y * 30), (int)(color.z * 30));
+            frameBuffer[x + y * SCREEN_WIDTH] = RGB15((int)(color.x * 31), (int)(color.y * 31), (int)(color.z * 31));
         }
     }
 
@@ -43,7 +43,7 @@ void RenderManager::PixUpdate(int x, int y)
     colors[x][y] = shaderFuncs[shaderFuncsIndex](uv, shaderTime);
 
     /*vec4 color = colors [x][y];
-    frameBuffer[x + y * SCREEN_WIDTH] = RGB15((int)(color.x * 30), (int)(color.y * 30), (int)(color.z * 30));*/
+    frameBuffer[x + y * SCREEN_WIDTH] = RGB15((int)(color.x * 31), (int)(color.y * 31), (int)(color.z * 31));*/
 }
 
 float RenderManager::GetShaderSpeed()
