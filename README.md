@@ -1,4 +1,5 @@
 # NDSShader
+<img width="350" alt="" src="readmefiles/DSL.jpg"><br>
 NDSでシェーダーのようなものを動かすライブラリ<br>
 <a href="https://github.com/NidoKota/HGShader" target="_blank" rel="noopener noreferrer">HGShader</a>のNDS移植版 (現状HGShaderより重たい)<br>
 C++のお勉強とNDSを動かす浪漫に駆られて作った
