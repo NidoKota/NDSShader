@@ -21,4 +21,4 @@ DevKitProとMakeFileを導入してmakeコマンドを打ち込む<br>
 
 # ライセンス
 ※MakefileはDevKitProにあったものを流用しただけ<br>
-その他は、<a href="https://github.com/NidoKota/NDSShader/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a><br>
+その他は、<a href="https://github.com/NidoKota/NDSShader/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a><br>
