@@ -45,16 +45,16 @@ int main(void)
         else if (keysDown() & KEY_UP)
         {
             renderManager.SetPixCount(
-                renderManager.GetPixWidthCount() + (int)(SCREEN_WIDTH / 15),
-                renderManager.GetPixHeightCount() + (int)(SCREEN_HEIGHT / 15));
+                renderManager.GetPixWidthCount() + (int)(SCREEN_WIDTH / 5),
+                renderManager.GetPixHeightCount() + (int)(SCREEN_HEIGHT / 5));
 
             iprintf("\x1b[%d;%dH%s", 0, 0, "UP");
         }
         else if (keysDown() & KEY_DOWN)
         {
             renderManager.SetPixCount(
-                renderManager.GetPixWidthCount() - (int)(SCREEN_WIDTH / 15),
-                renderManager.GetPixHeightCount() - (int)(SCREEN_HEIGHT / 15));
+                renderManager.GetPixWidthCount() - (int)(SCREEN_WIDTH / 5),
+                renderManager.GetPixHeightCount() - (int)(SCREEN_HEIGHT / 5));
 
             iprintf("\x1b[%d;%dH%s", 0, 0, "DOWN");
         }

@@ -16,7 +16,7 @@ void RenderManager::FlameUpdate()
             PixUpdate(x, y);
     }
 
-    float widthMul = SCREEN_WIDTH / pixWidthCount;
+    /*float widthMul = SCREEN_WIDTH / pixWidthCount;
     float heightMul = SCREEN_HEIGHT / pixHeightCount;
 
     for (int y = 0; y < SCREEN_HEIGHT; y++)
@@ -29,7 +29,7 @@ void RenderManager::FlameUpdate()
 
             frameBuffer[x + y * SCREEN_WIDTH] = RGB15((int)(color.x * 31), (int)(color.y * 31), (int)(color.z * 31));
         }
-    }
+    }*/
 
     renderCount = renderCount >= 3 ? renderCount : renderCount + 1;
 }
@@ -42,8 +42,8 @@ void RenderManager::PixUpdate(int x, int y)
     //Shaderの計算
     colors[x][y] = shaderFuncs[shaderFuncsIndex](uv, shaderTime);
 
-    /*vec4 color = colors [x][y];
-    frameBuffer[x + y * SCREEN_WIDTH] = RGB15((int)(color.x * 31), (int)(color.y * 31), (int)(color.z * 31));*/
+    vec4 color = colors [x][y];
+    frameBuffer[x + y * SCREEN_WIDTH] = RGB15((int)(color.x * 30), (int)(color.y * 30), (int)(color.z * 30));
 }
 
 float RenderManager::GetShaderSpeed()
